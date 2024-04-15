@@ -1,38 +1,68 @@
+:root {
+  --Quiz: rgb(249, 118, 225);
+  --button: rgb(124, 26, 185);
+}
+
+body {
+  background: url("https://images.pexels.com/photos/1174114/pexels-photo-1174114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.App h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.Menu {
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--Quiz);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+/* === Menu Styles === */
+.Menu input,
+.Menu button {
+  width: 300px;
+  height: 50px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+.Menu input::placeholder {
+  padding-left: 5px;
+}
+
+.Menu button {
+  background-color: var(--button);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover,
+button:focus {
+  cursor: pointer;
+  background-color: rgb(77, 238, 249);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Menu label {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
