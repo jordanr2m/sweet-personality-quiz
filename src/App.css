@@ -1,6 +1,7 @@
 :root {
-  --Quiz: rgb(249, 118, 225);
+  --Menu: rgb(249, 118, 225);
   --button: rgb(124, 26, 185);
+  --Quiz: rgb(91, 232, 242);
 }
 
 body {
@@ -22,13 +23,12 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.Menu {
+.Menu,
+.Quiz {
   width: 600px;
-  height: 600px;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: var(--Quiz);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +36,11 @@ body {
 }
 
 /* === Menu Styles === */
+.Menu {
+  background-color: var(--Menu);
+  height: 600px;
+}
+
 .Menu input,
 .Menu button {
   width: 300px;
@@ -58,11 +63,36 @@ body {
 button:hover,
 button:focus {
   cursor: pointer;
-  background-color: rgb(77, 238, 249);
+  background-color: var(--Quiz);
   color: black;
 }
 
 .Menu label {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+
+/* === Quiz Styles === */
+.Quiz {
+  background-color: var(--Quiz);
+}
+
+.Quiz h2 {
+  padding: 10px 10px 0 10px;
+  margin-top: 0;
+  line-height: 2.3rem;
+  font-family: sans-serif;
+}
+
+.answers button {
+  width: 500px;
+  padding: 20px 15px;
+  margin: 10px;
+  line-height: 1.75rem;
+  border: none;
+  border-radius: 5px;
+  border: 4px solid var(--Menu);
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  background-color: white;
 }

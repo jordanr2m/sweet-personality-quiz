@@ -8,9 +8,9 @@ export const Questions = [
     }, 
     {
         prompt: "You find a $100 bill on the ground outside of the supermarket on your way inside to shop. What do you do?",
+        gumdrop: "Take it right away! It's a gift from the universe that I found it, after all.",
+        liquorice: "Leave it there and pretend you never saw it; let someone else have the moral dilemma!",
         lollipop: "Give the bill to the customer service desk.",
         chocolate: "Consider returning the bill, but remembering the increase in grocery prices recently, decide to keep it instead.",
-        liquorice: "Leave it there and pretend you never saw it; let someone else have the moral dilemma!",
-        gumdrop: "Take it right away! It's a gift from the universe that I found it, after all.",
     }
 ]

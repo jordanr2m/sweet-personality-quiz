@@ -1,5 +1,6 @@
 import './App.css';
 import Menu from './components/Menu';
+import Quiz from './components/Quiz';
 import { useState } from 'react';
 import { GameStateContext } from './helpers/Contexts';
 
@@ -15,8 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Super Sweet Personality Quiz 🍭</h1>
-      <GameStateContext.Provider value={{gameState, setGameState, userName, setUserName}}>
+      <GameStateContext.Provider value={{ gameState, setGameState, userName, setUserName, chocolateScore, setChocolateScore, gumdropScore, setGumdropScore, liquoriceScore, setLiquoriceScore, lollipopScore, setLollipopScore }}>
         {gameState === 'menu' && <Menu />}
+        {gameState === 'playing' && <Quiz />}
       </GameStateContext.Provider>
     </div>
   );
