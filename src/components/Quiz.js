@@ -4,7 +4,7 @@ import { GameStateContext } from '../helpers/Contexts';
 import { Questions } from "../helpers/Questions";
 
 function Quiz() {
-    const { setGameState, chocolateScore, setChocolateScore, gumdropScore, setGumdropScore, liquoriceScore, setLiquoriceScore, lollipopScore, setLollipopScore, finalResult, setFinalResult } = useContext(GameStateContext);
+    const { setGameState, score, setScore } = useContext(GameStateContext);
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen, setOptionChosen] = useState("");
@@ -15,21 +15,21 @@ function Quiz() {
     }
 
     const checkAnswer = () => {
-        if (optionChosen === "gumdrop") {
-            console.log("Gumdrop")
-            setGumdropScore(gumdropScore + 1)
-        }
         if (optionChosen === "liquorice") {
             console.log("Liquorice")
-            setLiquoriceScore(liquoriceScore + 1)
-        }
-        if (optionChosen === "lollipop") {
-            console.log("Lollipop")
-            setLollipopScore(lollipopScore + 1)
-        }
+            setScore(score + 1)
+        } 
         if (optionChosen === "chocolate") {
             console.log("Chocolate")
-            setChocolateScore(chocolateScore + 1)
+            setScore(score + 2)
+        } 
+        if (optionChosen === "gumdrop") {
+            console.log("Gumdrop")
+            setScore(score + 10)
+        } 
+        if (optionChosen === "lollipop") {
+            console.log("Lollipop")
+            setScore(score + 23)
         }
     }
 
@@ -38,28 +38,8 @@ function Quiz() {
         setCurrentQuestion(currentQuestion + 1)
     }
 
-    const checkResult = () => {
-        if (gumdropScore > liquoriceScore && gumdropScore > lollipopScore && gumdropScore > chocolateScore) {
-            setFinalResult(0);
-        }
-        if (liquoriceScore > gumdropScore && liquoriceScore > lollipopScore && liquoriceScore > chocolateScore) {
-            setFinalResult(1);
-        }
-        if (lollipopScore > gumdropScore && lollipopScore > liquoriceScore && lollipopScore > chocolateScore) {
-            setFinalResult(2)
-        }
-        if (chocolateScore > gumdropScore && chocolateScore > liquoriceScore && chocolateScore > lollipopScore) {
-            setFinalResult(3)
-        }
-        // Outlier - Mixed
-        if (gumdropScore === liquoriceScore || gumdropScore === lollipopScore || gumdropScore === chocolateScore || liquoriceScore === lollipopScore || liquoriceScore === chocolateScore || lollipopScore === chocolateScore) {
-            setFinalResult(4)
-        }
-    }
-
     const finishQuiz = () => {
         checkAnswer();
-        checkResult();
         setGameState("finished")
     }
 
@@ -72,6 +52,8 @@ function Quiz() {
                 <button onClick={() => { chooseOption("lollipop") }}>{Questions[currentQuestion].lollipop}</button>
                 <button onClick={() => { chooseOption("chocolate") }}>{Questions[currentQuestion].chocolate}</button>
             </div>
+
+            {score}
 
             {currentQuestion === Questions.length - 1 ? (
                 <button onClick={finishQuiz} className="finishQuiz">Finish Quiz</button>
