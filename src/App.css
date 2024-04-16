@@ -2,6 +2,7 @@
   --Menu: rgb(249, 118, 225);
   --button: rgb(124, 26, 185);
   --Quiz: rgb(91, 232, 242);
+  --EndScreen: rgb(253, 210, 245);
 }
 
 body {
@@ -19,18 +20,20 @@ body {
 
 .App h1 {
   font-family: "Pacifico", cursive;
-  font-size: 3rem;
-  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .Menu,
-.Quiz {
+.Quiz,
+.EndScreen {
   width: 600px;
   padding: 30px;
   box-sizing: border-box;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -39,6 +42,7 @@ body {
 .Menu {
   background-color: var(--Menu);
   height: 600px;
+
 }
 
 .Menu input,
@@ -46,6 +50,10 @@ body {
   width: 300px;
   height: 50px;
   margin: 8px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 5px;
   font-size: 1.25rem;
@@ -72,6 +80,13 @@ button:focus {
   margin-bottom: 0.5rem;
 }
 
+.directions {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 100px;
+  line-height: 2.25rem;
+}
+
 /* === Quiz Styles === */
 .Quiz {
   background-color: var(--Quiz);
@@ -81,7 +96,7 @@ button:focus {
   padding: 10px 10px 0 10px;
   margin-top: 0;
   line-height: 2.3rem;
-  font-family: sans-serif;
+  font-size: 1.6rem;
 }
 
 .answers button {
@@ -95,4 +110,34 @@ button:focus {
   box-sizing: border-box;
   font-size: 1.25rem;
   background-color: white;
+}
+
+.answers button:hover,
+.answers button:focus {
+  cursor: pointer;
+  background-color: var(--button);
+  color: white;
+  border-color: white;
+}
+
+button.nextQuestion,
+button.finishQuiz {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button.nextQuestion:hover,
+button.finishQuiz:hover {
+  background: var(--Menu);
+  color: white;
+  transition: background 200ms ease-in;
+}
+
+/* === EndScreen Styles === */
+.EndScreen {
+  background-color: var(--EndScreen);
 }

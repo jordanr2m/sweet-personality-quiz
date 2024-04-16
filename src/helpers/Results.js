@@ -1,7 +1,6 @@
 export const Results = [
     {
         name: "chocolate",
-        description: "",
-        img: ,
+        description: "A chocolate bar",
     },
 ]
