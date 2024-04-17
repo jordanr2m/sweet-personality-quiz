@@ -16,19 +16,15 @@ function Quiz() {
 
     const checkAnswer = () => {
         if (optionChosen === "lollipop") {
-            console.log("Lollipop")
             setScore(score + 1)
         } 
         if (optionChosen === "liquorice") {
-            console.log("Liquorice")
             setScore(score + 2)
         } 
         if (optionChosen === "chocolate") {
-            console.log("Gumdrop")
             setScore(score + 3)
         } 
         if (optionChosen === "gumdrop") {
-            console.log("Lollipop")
             setScore(score + 4)
         }
     }
@@ -53,7 +49,7 @@ function Quiz() {
                 <button onClick={() => { chooseOption("chocolate") }}>{Questions[currentQuestion].chocolate}</button>
             </div>
 
-            {score}
+            {/* {score} */}
 
             {currentQuestion === Questions.length - 1 ? (
                 <button onClick={finishQuiz} className="finishQuiz">Finish Quiz</button>

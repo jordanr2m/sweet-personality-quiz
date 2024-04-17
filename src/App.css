@@ -114,7 +114,6 @@ button:focus {
 
 .answers button:hover,
 .answers button:focus {
-  cursor: pointer;
   background-color: var(--button);
   color: white;
   border-color: white;
@@ -142,9 +141,45 @@ button.finishQuiz:hover {
   background-color: var(--EndScreen);
 }
 
+.EndScreen h2 {
+  padding: 10px 10px 0 10px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
+}
+
+.EndScreen h3 {
+  margin-top: 5px;
+}
+
+.EndScreen h3 span {
+  font-family: "Pacifico", cursive;
+  font-size: 1.8rem;
+}
+
+.EndScreen p {
+  line-height: 1.6rem;
+  padding: 0 15px;
+}
 
 .resultsImg {
-  width: 400px;
+  width: 350px;
   border-radius: 5px;
   border: 10px solid white;
+  margin-top: 10px;
+}
+
+.restartBtn {
+  font-size: 1.1rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 22px;
+}
+
+.restartBtn:hover,
+.restartBtn:hover {
+  background: var(--Quiz);
+  transition: background 200ms ease-in;
 }

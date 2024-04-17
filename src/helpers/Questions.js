@@ -1,10 +1,10 @@
 export const Questions = [
     {
         prompt: "It is Saturday, and a friend invites you to go skydiving with them unexpectedly. How do you respond?",
-        gumdrop: "No thank you, I already have plans!",
+        gumdrop: "No thanks, I already have plans!",
         liquorice: "I'll go if you have no one else to go with, and you don't want to go alone.",
-        lollipop: "Heck yes, I thought you'd never ask!",
-        chocolate: "I'd like to go skydiving, but this is a bit last minute. Do you want to go next weekend instead?",
+        lollipop: "That sounds like fun, I'd love to join!",
+        chocolate: "I'd like to go skydiving, but this is a bit last minute, and I need time to mentally prepare myself. Do you want to go next weekend instead?",
     }, 
     {
         prompt: "You find a $100 bill on the ground outside of the supermarket on your way inside to shop. What do you do?",
@@ -12,5 +12,40 @@ export const Questions = [
         liquorice: "Leave it there and pretend I never saw it; let someone else have the moral dilemma!",
         lollipop: "Give the bill to the customer service desk.",
         chocolate: "Consider returning the bill, but remembering the increase in grocery prices recently, decide to keep it instead.",
-    }
+    },
+    {
+        prompt: "It's Friday night, and you just got home from work. How are you spending your evening?",
+        gumdrop: "Prioritizing self-care with a warm bath or something else that I find enjoyable.",
+        liquorice: "I can't wait to curl up and relax with a good book or my favorite TV show!",
+        lollipop: "Most likely attending an event, a meeting, or preparing for an out-of-town trip.",
+        chocolate: "Meeting up with friends for a fun night together!",
+    },
+    {
+        prompt: "You're invited to a friend's birthday party, but you don't share many mutual friends with them. How do you feel?",
+        gumdrop: "Amazing, I love taking any opportunity I get to meet new people!",
+        liquorice: "It's not really my scene. I will politely decline the invitation.",
+        lollipop: "I'll go regardless of my personal feelings, since I know it is important to my friend.",
+        chocolate: "Sounds like fun! There will probably be cake there, too!",
+    },
+    {
+        prompt: "You are a kid, and your parents finally agree to get you the pet that you want, but you must be the one responsible for caring for it. Which pet do you choose?",
+        gumdrop: "None! I'd rather spend my time playing than taking care of a pet.",
+        liquorice: "A cat",
+        lollipop: "Choose to adopt an older dog",
+        chocolate: "A puppy",
+    },
+    {
+        prompt: "You are hanging out with a friend, and they say something that offends you. How do you respond?",
+        gumdrop: "I let them have a piece of my mind! I won't tolerate any disrespect.",
+        liquorice: "I laugh it off and try to change the subject.",
+        lollipop: "I calmly let them know that they have violated a boundary and ask that they not make comments like that around me again.",
+        chocolate: "I express that I disagree with their comment, then change the subject to something more pleasant.",
+    },
+    {
+        prompt: "You just won $1,000,000! How do you plan to spend it?",
+        gumdrop: "I'm buying a new house!",
+        liquorice: "I'm planning a solo backpacking trip through Europe!",
+        lollipop: "I'm donating most of it to my favorite charity, then buying a new car with the rest!",
+        chocolate: "I'm giving some of the money to any friends or family members in need, then I'm booking a trip to a place I've always wanted to go!",
+    },
 ]

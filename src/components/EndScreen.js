@@ -28,7 +28,7 @@ function EndScreen() {
             <h2>Quiz Complete!</h2>
             <div className="resultsWrapper">
                 <h3>{userName.length === 0 ? "Quiz taker" : userName}, your Result is: <span>{Results[finalResult].name}</span></h3>
-                <p>More About Your Type:</p>
+                <p>About Your Type:</p>
                 <p className="description">{Results[finalResult].description}</p>
                 <img className="resultsImg" 
                     src={Results[finalResult].img} 
@@ -36,7 +36,7 @@ function EndScreen() {
                 </img>
             </div>
             
-            {score}
+            {/* {score} */}
             <button className="restartBtn" onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )

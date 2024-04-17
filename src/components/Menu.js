@@ -7,7 +7,7 @@ function Menu() {
 
     return (
         <div className="Menu">
-            <p className="directions">Answer each question honestly. Choose the response that most resonates with you :)</p>
+            <p className="directions">Answer each question honestly. Choose the response that most resonates with you. ◡̈</p>
 
             <label htmlFor="name">Enter your name:</label>
             <input
