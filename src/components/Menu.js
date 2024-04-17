@@ -7,22 +7,24 @@ function Menu() {
 
     return (
         <div className="Menu">
-            <p className="directions">Answer each question honestly. Choose the response that most resonates with you. ◡̈</p>
+            <div className="menu-wrapper">
+                <p className="directions">Answer each question honestly. Choose the response that most resonates with you. ◡̈</p>
 
-            <label htmlFor="name">Enter your name:</label>
-            <input
-                id="name"
-                type="text"
-                placeholder="Name"
-                autoComplete="off"
-                onChange={(e) => setUserName(e.target.value)}
-                onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                        setGameState("playing")
-                    }
-                }}
-            />
-            <button onClick={() => { setGameState("playing") }}>Start Quiz</button>
+                <label htmlFor="name">Enter your name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    autoComplete="off"
+                    onChange={(e) => setUserName(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            setGameState("playing")
+                        }
+                    }}
+                />
+                <button onClick={() => { setGameState("playing") }}>Start Quiz</button>
+            </div>
         </div>
     )
 }
