@@ -9,13 +9,13 @@ function EndScreen() {
     // Determine Personality result
     let finalResult;
     if (score <= 10) {
-        finalResult = 0;
+        finalResult = 0; // lollipop
     } else if ((score > 10) && (score <= 15)) {
-        finalResult = 1;
+        finalResult = 1; // liquorice
     } else if ((score > 15) && (score <= 24)) {
-        finalResult = 2;
+        finalResult = 2; // chocolate
     } else if ((score > 24) && (score <= 28)) {
-        finalResult = 3;
+        finalResult = 3; // gumdrop
     }
 
     const restartQuiz = () => {
@@ -29,7 +29,7 @@ function EndScreen() {
             <div className="resultsWrapper">
                 <h3>{userName.length === 0 ? "Quiz taker" : userName}, your Result is: <span>{Results[finalResult].name}</span></h3>
                 <p>More About Your Type:</p>
-                <p>{Results[finalResult].description}</p>
+                <p className="description">{Results[finalResult].description}</p>
                 <img className="resultsImg" 
                     src={Results[finalResult].img} 
                     alt={Results[finalResult].alt}>
@@ -37,7 +37,7 @@ function EndScreen() {
             </div>
             
             {score}
-            <button onClick={restartQuiz}>Restart Quiz</button>
+            <button className="restartBtn" onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )
 }

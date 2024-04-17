@@ -9,7 +9,6 @@ function App() {
   const [gameState, setGameState] = useState("menu");
   const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0);
-  // const [finalResult, setFinalResult] = useState(0);
 
   return (
     <div className="App">
