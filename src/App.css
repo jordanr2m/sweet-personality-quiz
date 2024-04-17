@@ -42,7 +42,7 @@ body {
 .Menu {
   background-color: var(--Menu);
   height: 600px;
-
+  border: 8px solid white;
 }
 
 .Menu input,
@@ -140,4 +140,11 @@ button.finishQuiz:hover {
 /* === EndScreen Styles === */
 .EndScreen {
   background-color: var(--EndScreen);
+}
+
+
+.resultsImg {
+  width: 400px;
+  border-radius: 5px;
+  border: 10px solid white;
 }

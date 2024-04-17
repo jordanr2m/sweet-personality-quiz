@@ -15,21 +15,21 @@ function Quiz() {
     }
 
     const checkAnswer = () => {
-        if (optionChosen === "liquorice") {
-            console.log("Liquorice")
-            setScore(score + 1)
-        } 
-        if (optionChosen === "chocolate") {
-            console.log("Chocolate")
-            setScore(score + 2)
-        } 
-        if (optionChosen === "gumdrop") {
-            console.log("Gumdrop")
-            setScore(score + 10)
-        } 
         if (optionChosen === "lollipop") {
             console.log("Lollipop")
-            setScore(score + 23)
+            setScore(score + 1)
+        } 
+        if (optionChosen === "liquorice") {
+            console.log("Liquorice")
+            setScore(score + 2)
+        } 
+        if (optionChosen === "chocolate") {
+            console.log("Gumdrop")
+            setScore(score + 3)
+        } 
+        if (optionChosen === "gumdrop") {
+            console.log("Lollipop")
+            setScore(score + 4)
         }
     }
 

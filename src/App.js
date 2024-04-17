@@ -9,12 +9,12 @@ function App() {
   const [gameState, setGameState] = useState("menu");
   const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0);
-  const [finalResult, setFinalResult] = useState(0);
+  // const [finalResult, setFinalResult] = useState(0);
 
   return (
     <div className="App">
       <h1>Super Sweet Personality Quiz 🍭</h1>
-      <GameStateContext.Provider value={{ gameState, setGameState, userName, setUserName, score, setScore, finalResult, setFinalResult }}>
+      <GameStateContext.Provider value={{ gameState, setGameState, userName, setUserName, score, setScore }}>
         {gameState === 'menu' && <Menu />}
         {gameState === 'playing' && <Quiz />}
         {gameState === 'finished' && <EndScreen />}
