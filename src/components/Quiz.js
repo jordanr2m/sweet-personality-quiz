@@ -38,7 +38,6 @@ function Quiz() {
 
     const finishQuiz = () => {
         checkAnswer();
-        chooseOption("");
         setGameState("finished")
     }
 
