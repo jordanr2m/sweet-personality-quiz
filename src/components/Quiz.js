@@ -31,11 +31,14 @@ function Quiz() {
 
     const nextQuestion = () => {
         checkAnswer();
+        // Set option to empty string for disabled property
+        chooseOption("");
         setCurrentQuestion(currentQuestion + 1)
     }
 
     const finishQuiz = () => {
         checkAnswer();
+        chooseOption("");
         setGameState("finished")
     }
 
@@ -49,12 +52,10 @@ function Quiz() {
                 <button onClick={() => { chooseOption("chocolate") }}>{Questions[currentQuestion].chocolate}</button>
             </div>
 
-            {/* {score} */}
-
             {currentQuestion === Questions.length - 1 ? (
-                <button onClick={finishQuiz} className="finishQuiz">Finish Quiz</button>
+                <button onClick={finishQuiz} disabled={optionChosen.length === 0 ? true : false} className="finishQuiz">Finish Quiz</button>
             ) : (
-                <button onClick={nextQuestion} className="nextQuestion">Next Question</button>
+                <button onClick={nextQuestion} disabled={optionChosen.length === 0 ? true : false} className="nextQuestion">Next Question</button>
             )}
         </div>
     )

@@ -10,9 +10,9 @@ function EndScreen() {
     let finalResult;
     if (score <= 10) {
         finalResult = 0; // lollipop
-    } else if ((score > 10) && (score <= 15)) {
+    } else if ((score > 10) && (score <= 16)) {
         finalResult = 1; // liquorice
-    } else if ((score > 15) && (score <= 24)) {
+    } else if ((score > 16) && (score <= 24)) {
         finalResult = 2; // chocolate
     } else if ((score > 24) && (score <= 28)) {
         finalResult = 3; // gumdrop
@@ -36,7 +36,6 @@ function EndScreen() {
                 </img>
             </div>
             
-            {/* {score} */}
             <button className="restartBtn" onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )

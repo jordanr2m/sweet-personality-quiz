@@ -7,6 +7,7 @@
 
 body {
   background: url("https://images.pexels.com/photos/1174114/pexels-photo-1174114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  margin: 0 auto;
 }
 
 .App {
@@ -36,6 +37,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 /* === Menu Styles === */
@@ -65,6 +67,10 @@ body {
 
 .Menu input::placeholder {
   padding-left: 5px;
+}
+
+.Menu input:focus {
+  outline: 3px solid var(--button);
 }
 
 .Menu button {
@@ -105,7 +111,7 @@ button:focus {
 
 .answers button {
   width: 500px;
-  padding: 20px 15px;
+  padding: 15px;
   margin: 10px;
   line-height: 1.75rem;
   border: none;
@@ -127,7 +133,7 @@ button.nextQuestion,
 button.finishQuiz {
   margin-top: 20px;
   font-size: 1.1rem;
-  background: transparent;
+  background: var(--Menu);
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -135,7 +141,7 @@ button.finishQuiz {
 
 button.nextQuestion:hover,
 button.finishQuiz:hover {
-  background: var(--Menu);
+  background: var(--button);
   color: white;
   transition: background 200ms ease-in;
 }
@@ -226,7 +232,6 @@ button.finishQuiz:hover {
 
   .answers button {
     width: 90%;
-    padding: 15px;
     margin: 10px 0;
     line-height: 1.6rem;
     font-size: 1.15rem;
