@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Super Sweet Personality Quiz 🍭</h1>
+      <h1>Super Sweet Personality Quiz<span role="img" aria-label="lollipop emoji"> 🍭 </span></h1>
       <GameStateContext.Provider value={{ gameState, setGameState, userName, setUserName, score, setScore }}>
         {gameState === 'menu' && <Menu />}
         {gameState === 'playing' && <Quiz />}
