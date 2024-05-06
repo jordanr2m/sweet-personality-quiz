@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sweet-personality-quiz/static/css/main.dfcca9c9.css",
+    "main.css": "/sweet-personality-quiz/static/css/main.3685cc28.css",
     "main.js": "/sweet-personality-quiz/static/js/main.c169907b.js",
     "static/js/453.2969865b.chunk.js": "/sweet-personality-quiz/static/js/453.2969865b.chunk.js",
     "index.html": "/sweet-personality-quiz/index.html",
-    "main.dfcca9c9.css.map": "/sweet-personality-quiz/static/css/main.dfcca9c9.css.map",
+    "main.3685cc28.css.map": "/sweet-personality-quiz/static/css/main.3685cc28.css.map",
     "main.c169907b.js.map": "/sweet-personality-quiz/static/js/main.c169907b.js.map",
     "453.2969865b.chunk.js.map": "/sweet-personality-quiz/static/js/453.2969865b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfcca9c9.css",
+    "static/css/main.3685cc28.css",
     "static/js/main.c169907b.js"
   ]
 }
