@@ -18,7 +18,7 @@ function Quiz() {
         if (optionChosen === "lollipop") {
             setScore(score + 1)
         } 
-        if (optionChosen === "liquorice") {
+        if (optionChosen === "licorice") {
             setScore(score + 2)
         } 
         if (optionChosen === "chocolate") {
@@ -46,7 +46,7 @@ function Quiz() {
             <h2>{Questions[currentQuestion].prompt}</h2>
             <div className="answers">
                 <button onClick={() => { chooseOption("gumdrop") }}>{Questions[currentQuestion].gumdrop}</button>
-                <button onClick={() => { chooseOption("liquorice") }}>{Questions[currentQuestion].liquorice}</button>
+                <button onClick={() => { chooseOption("licorice") }}>{Questions[currentQuestion].liquorice}</button>
                 <button onClick={() => { chooseOption("lollipop") }}>{Questions[currentQuestion].lollipop}</button>
                 <button onClick={() => { chooseOption("chocolate") }}>{Questions[currentQuestion].chocolate}</button>
             </div>

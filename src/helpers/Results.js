@@ -6,10 +6,10 @@ export const Results = [
         alt: "A shiny and delicious looking lollipop"
     },
     {
-        name: "Liquorice",
-        description: "Liquorice is a classic, beloved candy, but it is also an often overlooked candy; it is like you in many ways. You are a go-with-the-flow, don't-rock-the-boat type of person. This outlook has earned you a quiet and peaceful life, for the most part. Because of your agreeable nature, you tend to get along with most people. Although you've never been the life of the party, you take pride in your friendships and maintain a few very close relationships. Yours is a somewhat rare soul. Try to push yourself to go outside of your comfort zone every now and again; you might be pleasantly surprised by what you find waiting there. ◡̈",
+        name: "Licorice",
+        description: "Licorice is a classic, beloved candy, but it is also an often overlooked candy; it is like you in many ways. You are a go-with-the-flow, don't-rock-the-boat type of person. This outlook has earned you a quiet and peaceful life, for the most part. Because of your agreeable nature, you tend to get along with most people. Although you've never been the life of the party, you take pride in your friendships and maintain a few very close relationships. Yours is a somewhat rare soul. Try to push yourself to go outside of your comfort zone every now and again; you might be pleasantly surprised by what you find waiting there. ◡̈",
         img: "https://images.unsplash.com/photo-1533602933119-70608e48905d?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Assorted pieces of liqourice"
+        alt: "Assorted pieces of licorice"
     },
     {
         name: "Chocolate",
