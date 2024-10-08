@@ -1,3 +1,20 @@
+# Author's Custom README Notes
+**Title**: Super Sweet Personality Quiz
+**Overview**: This is a short, candy-themed personality quiz. There are 4 different possible personality outcomes based on what answers the user chooses to the questions. 
+    *Purpose*: I have always loved personality quizes and wanted to create my own. This is meant to be a fun way for users to learn more about themselves while answering somewhat silly questions. All of the questions and personality outcomes are my original conntent.
+**Features**: This React app keeps track of the user's answers using a score state. Users cannot move from one question to the next without selecting an answer to each question. At the end of the quiz, the score is totalled, and the result is determined by the point range that the user's score falls within. Each of the 4 personality results has its own score range.
+**Running this Project Locally**: You can find the repo to this project on GitHub here: https://github.com/jordanr2m/sweet-personality-quiz
+    1. Clone the project from Github
+    2. Run npm install in command line to initialize it as a React project
+    3. Run npm start in the command line to run the project locally
+    4. Take the quiz and see what candy you are!
+    *Live Site*: https://jordanr2m.github.io/sweet-personality-quiz/
+**Dev Dependencies**: React
+
+**Ways to Contribute**: Feel free to make any of your own changes. Pull Requests on GitHub are always welcome. For security issues or to speak with me directly, please email me at jordanjackson.dev@gmail.com 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
